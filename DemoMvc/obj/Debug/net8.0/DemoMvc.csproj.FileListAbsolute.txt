@@ -1,0 +1,15 @@
+D:\net_core_API\DemoMvc\bin\Debug\net8.0\DemoMvc.exe
+D:\net_core_API\DemoMvc\bin\Debug\net8.0\DemoMvc.deps.json
+D:\net_core_API\DemoMvc\bin\Debug\net8.0\DemoMvc.runtimeconfig.json
+D:\net_core_API\DemoMvc\bin\Debug\net8.0\DemoMvc.dll
+D:\net_core_API\DemoMvc\bin\Debug\net8.0\DemoMvc.pdb
+D:\net_core_API\DemoMvc\obj\Debug\net8.0\DemoMvc.GeneratedMSBuildEditorConfig.editorconfig
+D:\net_core_API\DemoMvc\obj\Debug\net8.0\DemoMvc.AssemblyInfoInputs.cache
+D:\net_core_API\DemoMvc\obj\Debug\net8.0\DemoMvc.AssemblyInfo.cs
+D:\net_core_API\DemoMvc\obj\Debug\net8.0\DemoMvc.csproj.CoreCompileInputs.cache
+D:\net_core_API\DemoMvc\obj\Debug\net8.0\DemoMvc.sourcelink.json
+D:\net_core_API\DemoMvc\obj\Debug\net8.0\DemoMvc.dll
+D:\net_core_API\DemoMvc\obj\Debug\net8.0\refint\DemoMvc.dll
+D:\net_core_API\DemoMvc\obj\Debug\net8.0\DemoMvc.pdb
+D:\net_core_API\DemoMvc\obj\Debug\net8.0\DemoMvc.genruntimeconfig.cache
+D:\net_core_API\DemoMvc\obj\Debug\net8.0\ref\DemoMvc.dll
