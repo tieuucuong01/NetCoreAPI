@@ -6,4 +6,8 @@ public class NguyenvancuongController : Controller
     {
         return View();
     }
+    public IActionResult Demo()
+    {
+        return View();
+    }
 }
