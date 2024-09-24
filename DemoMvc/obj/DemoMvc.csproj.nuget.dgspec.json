@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\net_core_API\\DemoMvc\\DemoMvc.csproj": {}
+    "D:\\net_core_API\\DemoMVC\\DemoMVC.csproj": {}
   },
   "projects": {
-    "D:\\net_core_API\\DemoMvc\\DemoMvc.csproj": {
+    "D:\\net_core_API\\DemoMVC\\DemoMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\net_core_API\\DemoMvc\\DemoMvc.csproj",
-        "projectName": "DemoMvc",
-        "projectPath": "D:\\net_core_API\\DemoMvc\\DemoMvc.csproj",
+        "projectUniqueName": "D:\\net_core_API\\DemoMVC\\DemoMVC.csproj",
+        "projectName": "DemoMVC",
+        "projectPath": "D:\\net_core_API\\DemoMVC\\DemoMVC.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\net_core_API\\DemoMvc\\obj\\",
+        "outputPath": "D:\\net_core_API\\DemoMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -42,6 +42,32 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SQLite": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -54,6 +80,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
