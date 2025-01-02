@@ -16,18 +16,31 @@ namespace DemoMVC.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.8");
 
-            modelBuilder.Entity("DemoMVC.Models.entities.Employee", b =>
+            modelBuilder.Entity("DemoMVC.Models.entities.Person", b =>
                 {
-                    b.Property<string>("EmployeeID")
+                    b.Property<string>("PersonID")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Fullname")
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasMaxLength(8)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Hoten")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.HasKey("EmployeeID");
+                    b.Property<string>("Quequan")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
-                    b.ToTable("Employee");
+                    b.HasKey("PersonID");
+
+                    b.ToTable("Person");
+
+                    b.HasDiscriminator().HasValue("Person");
+
+                    b.UseTphMappingStrategy();
                 });
 
             modelBuilder.Entity("DemoMVC.Models.entities.Student", b =>
@@ -46,6 +59,21 @@ namespace DemoMVC.Migrations
                     b.HasKey("StudentID");
 
                     b.ToTable("Student");
+                });
+
+            modelBuilder.Entity("DemoMVC.Models.entities.Employee", b =>
+                {
+                    b.HasBaseType("DemoMVC.Models.entities.Person");
+
+                    b.Property<string>("EmployeeID")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Namsinh")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasDiscriminator().HasValue("Employee");
                 });
 #pragma warning restore 612, 618
         }

@@ -20,8 +20,19 @@ namespace DemoMVC.Controllers
         }
 
         // GET: Person
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(String searchString)
         {
+            if (_context.Person == null)
+            {
+                return Problem("Entity set 'MvcMovieContext.Movie'  is null.");
+             }
+                var Person = from m in _context.Person
+                select m;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                 Person = Person.Where(s => s.Title!.ToUpper().Contains(searchString.ToUpper()));
+            }
+
             return View(await _context.Person.ToListAsync());
         }
 
